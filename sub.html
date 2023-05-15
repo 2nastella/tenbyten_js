@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텐바이텐 10X10 : 감성채널 감성에너지</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="./favicon.ico" rel="icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div id="headerbar">
+      <div id="barimg"><img src="img/headerbar.jpg" alt="헤더바"></div>
+    </div>
+
+    <!--로그인 바-->
+    <div id="loginbar">
+      <div id="login_box">
+        <div class="log_biz">
+          <p class="biz_text"><a href="index.html" target="_self">사업자전용몰, 텐바이텐 <img src="img/logo_biz.png"
+                alt="사업자전용로고"></a></p>
+        </div>
+        <div class="log_text">
+          <ul>
+            <li><a href="login.html" target="_self">로그인&#47;회원가입</a></li>
+            <li><a href="#" target="_self">알림</a></li>
+            <li><a href="#" target="_self">주문&#47;배송</a></li>
+            <li><a href="#" target="_self">고객센터</a></li>
+            <li><a href="#" target="_self">장바구니</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--상단 로고 및 메뉴 박스-->
+
+    <div id="topbox">
+      <div class="logo_box">
+        <a href="index.html" target="_self"><img src="img/logo.jpg" alt="logo"></a>
+      </div>
+
+      <!--헤드 서비스 메뉴-->
+      <div class="headservice">
+        <ul>
+          <li><a href="#" target="_self">유니버설</a></li>
+          <li><a href="#" target="_self">공식스토어</a></li>
+          <li><a href="#" target="_self">신상품</a></li>
+          <li><a href="#" target="_self">베스트</a></li>
+          <li><a href="#" target="_self">할인특가</a></li>
+          <li><a href="#" target="_self">기획전</a></li>
+          <li><a href="#" target="_self">브랜드</a></li>
+          <li><input class="search" type="search" placeholder="초등 신학기를 위한 어린이 문구!" onfocus="this.placeholder=''" onblur="this.placeholder='초등 신학기를 위한 어린이 문구!'"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--내비게이션-->
+    <nav>
+      <ul>
+        <li><a href="#" target="_self">디자인문구</a></li>
+        <li><a href="#" target="_self">디지털/핸드폰</a></li>
+        <li><a href="#" target="_self">디자인가전</a></li>
+        <li>가구/수납</li>
+        <li><a href="#" target="_self">패브릭/생활</a></li>
+        <li><a href="#" target="_self">데코/조명</a></li>
+        <li><a href="#" target="_self">키친</a></li>
+        <li><a href="#" target="_self">푸드</a></li>
+        <li><a href="#" target="_self">패션의류</a></li>
+        <li><a href="#" target="_self">패션잡화</a></li>
+        <li><a href="#" target="_self">뷰티</a></li>
+        <li><a href="#" target="_self">주얼리/시계</a></li>
+        <li><a href="#" target="_self">Cat&Dog</a></li>
+        <li><a href="#" target="_self">토이/취미</a></li>
+        <li><a href="#" target="_self">캠핑</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 서브페이지 내용 시작 -->
+
+
+
+  <div id="subslider">
+  </div>
+
+  <section>
+    <div id="all_wrap_box">
+      <div id="sub_top_text">
+        <ul>
+          <li><a href="#" target="_self">HOME</a></li>
+          <li>&#62;</li>
+          <li><a href="#" target="_self">가구&#47;수납</a></li>
+          <li>&#62;</li>
+          <li><a href="#" target="_self">홈오피스가구</a></li>
+          <li>&#62;</li>
+          <li><a href="#" target="_self">책장&#47;북선반</a></li>
+        </ul>
+      </div>
+
+
+
+      <!-- 박스 라인 이미지 삽입용 -->
+      <div id="product_topbox"></div>
+
+      <!--제품 사진 및 정보 가격 wrap-->
+
+      <div id="product_wrapbox">
+
+        <!--제품 사진-->
+        <div id="product_img_big">
+          <img src="img/sub/pic_book_01.jpg" alt="bookshelf0" id="cimg" class="b_pic">
+
+
+          <!-- 수정하기 여기서부터 제발 스크립트 작동 되어라 -->
+
+          <div id="product_img_thum">
+            <ul>
+              <li><img src="img/sub/pic_book_01.jpg" alt="bookshelf1" class="s_pic"></li>
+              <li><img src="img/sub/pic_book_02.jpg" alt="bookshelf2" class="s_pic"></li>
+              <li><img src="img/sub/pic_book_03.jpg" alt="bookshelf3" class="s_pic"></li>
+              <li><img src="img/sub/pic_book_04.jpg" alt="bookshelf4" class="s_pic"></li>
+              <li><img src="img/sub/pic_book_05.jpg" alt="bookshelf5" class="s_pic"></li>
+              <li><img src="img/sub/pic_book_06.jpg" alt="bookshelf6" class="s_pic"></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 스크립트 시작 -->
+
+        <script>
+          $(document).ready(function () {
+
+            $("#product_img_thum li:first-child").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_01.jpg");
+            });
+
+            $("#product_img_thum li:nth-child(2)").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_02.jpg");
+            });
+
+            $("#product_img_thum li:nth-child(3)").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_03.jpg");
+            });
+
+            $("#product_img_thum li:nth-child(4)").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_04.jpg");
+            });
+
+
+            $("#product_img_thum li:nth-child(5)").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_05.jpg");
+            });
+
+            $("#product_img_thum li:last-child").mouseover(function () {
+              $("#cimg").attr("src", "img/sub/pic_book_06.jpg");
+            });
+          });
+        </script>
+        <!-- 스크립트 종료 -->
+
+        <!--제품 정보 및 가격-->
+        <div id="product_lt">
+          <h3>홈인홈 에디터의 서재 원목 서랍형 오픈 책장</h3>
+          <table>
+            <tr>
+              <td class="lt_title">판매가</td>
+              <td class="lt_text"><span>508,000원</span></td>
+            </tr>
+
+            <tr>
+              <td class="lt_title">할인판매가</td>
+              <td class="lt_text"><span class="text_red">318,000원 &#91;37%&#93;</span></td>
+            </tr>
+
+            <tr>
+              <td class="lt_title">마일리지</td>
+              <td class="lt_text"><span>4,500 point~</span></td>
+            </tr>
+
+
+            <tr>
+              <td class="lt_title">배송구분</td>
+              <td class="lt_text">텐텐배송 + 해외배송 <img src="img/sub/ico_abroad.png">
+                <a href="#" target="_self"><span class="baeinfo">배송비 안내 &#187;</span></a></td>
+            </tr>
+            <tr>
+              <td class="lt_title">주문수량</td>
+              <td>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="lt_title">옵션선택</td>
+              <td>
+                <select>
+                  <option>선택(필수)</option>
+                  <option>월넛</option>
+                  <option>내추럴</option>
+                  <option>레드우드</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+
+          <!-- 함께 구매 추천 목록  -->
+          <div id="lt_etc_info">
+            <img src="img/sub/deco_plussale.gif" alt="plus_icon">
+            <img src="img/sub/sub_plus_item_2.png" alt="plus_item">
+            <p class="with">함께 구매하면 좋아요!</p>
+            <ul>
+              <li><a href="#" target="_self"><img src="img/sub/pic_shelf_01.jpg"></a></li>
+              <li>
+                <p>홈인홈 에디터의 서재 원목 LP형 깊은 책장 3X4_J139</p><br>
+                <p>할인판매가 <span>39,800원</span></p>
+                <p class="text_right"><button><a href="#" target="_self">담기</a></button></p>
+              </li>
+            </ul>
+          </div>
+
+
+          <!-- 버튼 박스 -->
+          <div id="button_box">
+            <a href="#" target="_self"><button class="a">찜하기</button></a>
+            <a href="#" target="_self"><button class="a">장바구니</button></a>
+            <a href="#" target="_self"><button class="b">바로구매</button></a>
+          </div>
+        </div>
+
+
+        <!-- 상품 코드 및 리뷰 -->
+        <div id="product_rt">
+          <img src="img/sub/sub_rt_best.png" alt="best_icon">
+          <dl>
+            <dt>상품코드</dt>
+            <dd>51200689</dd>
+          </dl>
+          <hr>
+          <dl>
+            <dt>Review</dt>
+            <dd><img src="img/logo/ico_review_star_05.png"></dd>
+          </dl>
+          <hr>
+          <dl>
+            <dt>Gift Talk</dt>
+            <dd><a href="#" target="_self">1</a> | <a href="#" target="_self">쓰기</a></dd>
+          </dl>
+        </div>
+      </div>
+
+
+      <!--다른 고객이 함께 보는(알고리즘) -->
+      <div id="together">
+        <h3>HAPPY TOGETHER <span>이 상품을 조회한 고객님들이 같이 조회한 상품</span></h3>
+        <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/pic_together_01.jpg" alt="상품사진1">
+            <h4>JWK</h4>
+            <p>프리미엄 다크 JWK</p>
+            <h5 class="per_10">39,000원</h5>
+          </a>
+        </div>
+
+        <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/pic_together_02.jpg" alt="상품사진2">
+            <h4>furnifranc</h4>
+            <p>수입 엔틱가구 TR 2</p>
+            <h5 class="per_27">680,000원</h5>
+          </a>
+        </div>
+
+        <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/pic_together_03.jpg" alt="상품사진3">
+            <h4>furnifranc</h4>
+            <p>수입 엔틱가구 TR 3</p>
+            <h5 class="per_10">470,000원</h5>
+          </a>
+        </div>
+
+        <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/pic_together_04.jpg" alt="상품사진4">
+            <h4>home in home</h4>
+            <p>콜렉터북케이스 LP장</p>
+            <h5 class="per_30">38,800원</h5>
+          </a>
+        </div>
+
+        <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/pic_together_05.jpg" alt="상품사진5">
+            <h4>home in home</h4>
+            <p>홈인홈 에디터의 서재</p>
+            <h5 class="per_32">98,000원</h5>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- 제품 설명 상단 메뉴 -->
+      <div id="wrap_menu">
+        <div id="table_menu">
+          <ul>
+            <li><a href="#" target="_self">상품 설명</a></li>
+            <li><a href="#" target="_self">상품 후기</a></li>
+            <li><a href="#" target="_self">Q&amp;A</a></li>
+            <li><a href="#" target="_self">배송&#47;교환&#47;환불</a></li>
+            <li><a href="#" target="_self">CATEGORY BEST</a></li>
+            <li></a></li>
+            <li></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 제품 설명 시작 -->
+      <div id="sub_product_text">
+
+        <img src="img/sub/page_bookshelf_01.jpg" alt=""><br><br>
+
+        <!-- 비용 테이블 -->
+        <div id="cost">
+          <img src="img/sub/icon_book_shelf.jpg" alt="del_info">
+          <h4>주문전 배송 비용을 확인해주세요.</h4>
+
+          <table>
+            <tr>
+              <td>제품</td>
+              <td>수도권</td>
+              <td>경기외곽</td>
+              <td>지방</td>
+            </tr>
+
+            <tr class="last_td">
+              <td>서랍형 오픈 책장 3&times;4</td>
+              <td>15,000원</td>
+              <td>15,000원</td>
+              <td>25,000원</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 가구배송 체크사항 -->
+        <div id="precheck">
+          <h1> 가구배송 체크사항 </h1>
+          <h3>미리 확인하시어 기분좋은 배송 받으시기 바랍니다.</h3>
+
+
+          <h2> <img src="img/icon/icon_data_check.png" alt="icon1"> 안심번호 체크 해제 필수</h2>
+          <p>안심번호로 등록되면 배송 안내 문자 및 전화가 정상적으로 처리되지 않아 <br>배송지연 또는 불가 사항이 발생될 수 있습니다.</p>
+
+
+          <h2><img src="img/icon/icon_data_check.png" alt="icon1"> 오늘 주문! 배송은 언제?</h2>
+          <p>가구 배송은 화물/설치 배송으로 쇼핑몰 시스템과 연동되지 않습니다.</p>
+          <p>평균 수도권 5~10일/지방 최대 14일 정도 소요되며</p>
+          <p>배송 전 가구 전문 기사님이 직접 해피콜 후 배송됩니다.</p>
+
+          <h2><img src="img/icon/icon_data_check.png" alt="icon1"> 지역별 착불 배송비 확인 필수</h2>
+          <p><span class="underline">페이지 하단 지역별 착불 배송비 및 안내</span>를 반드시 확인하시기 바랍니다. </p>
+
+        </div>
+
+
+        <!-- 상세 페이지 제품 사진 시작 -->
+
+        <div id="product_photo">
+
+          <h2>홈인홈 『에디터의 서재』 원목 책장 시리즈</h2>
+          <h3>서랍형 오픈 책장3&times;4</h3>
+          <img src="img/sub/pic_book_shelf_015.jpg" alt="product_photo"><br><br>
+          <img src="img/sub/pic_book_shelf_016.jpg" alt="product_photo"><br><br>
+
+          <p>#파티션 책장 #LP책장 #오픈책장 #틈새수납 #아트서적</p>
+
+          <h3>#분위기 있는 북카페</h3>
+          <img src="img/sub/pic_book_shelf_001.jpg" alt="">
+
+          <h3>#스페셜리스트의 작업공간</h3>
+          <img src="img/sub/pic_book_shelf_002.jpg" alt="">
+
+          <h3>#콜렉터의 음악감상실</h3>
+          <img src="img/sub/pic_book_shelf_003.jpg" alt="">
+
+          <h3>#소중한 우리 아이 놀이방</h3>
+          <img src="img/sub/pic_book_shelf_004.jpg" alt="">
+
+          <h3>#크리에이터의 침실</h3>
+          <img src="img/sub/pic_book_shelf_005.jpg" alt="">
+        </div>
+
+
+        <!-- 상세페이지 내 섬네일 구간 -->
+        <div id="thum_photo">
+          <h3>LP형 깊은 책장</h3>
+          <p>walnut / Redwood / Natural</p>
+
+          <div class="thum_small">
+            <h4>3&times;1 LP형_j136</h4>
+            <img src="img/sub/pic_book_shelf_006.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>3&times;2 LP형_j137</h4>
+            <img src="img/sub/pic_book_shelf_007.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>3&times;3 LP형_j138</h4>
+            <img src="img/sub/pic_book_shelf_008.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>3&times;4 LP형_j139</h4>
+            <img src="img/sub/pic_book_shelf_009.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>3&times;5 LP형_j140</h4>
+            <img src="img/sub/pic_book_shelf_010.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>3&times;6 LP형_j141</h4>
+            <img src="img/sub/pic_book_shelf_011.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>5&times;1 LP형_j70</h4>
+            <img src="img/sub/pic_book_shelf_012.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>5&times;2 LP형_j71</h4>
+            <img src="img/sub/pic_book_shelf_013.jpg" alt="">
+          </div>
+
+          <div class="thum_small">
+            <h4>5&times;3 LP형_j72</h4>
+            <img src="img/sub/pic_book_shelf_014.jpg" alt="">
+          </div>
+        </div>
+
+
+        <div id="handle">
+          <h3>서랍 핸들 디자인 변경 안내</h3>
+          <p>에디터의 서재 책장시리즈의 서랍 유닛의 핸들 디자인이 사용시 더욱 편리한 형태로 변경되었습니다.</p>
+          <p>이미지 참고 부탁드립니다.</p><br><br>
+
+          <img src="img/sub/pic_be_af.jpg" alt="before_after">
+
+
+          <h3>상세사이즈</h3>
+          <p>실측 환경 및 위치에 따라 사이즈 차이가 발생할 수 있습니다.<p>
+
+              <img src="img/sub/pic_book_shelf_017.jpg" alt="sizeinfo">
+
+        </div>
+      </div>
+
+      <!-- 상품 필수 정보 -->
+      <div id="sub_infobox">
+        <h3>상품 필수 정보 <span>전자상거래 등에서의 상품정보 제공 고시에 따라 작성 되었습니다.</span></h3>
+        <div class="graybox">
+          <span style="display" :><em>품명 및 모델명:</em> [브루클린웍스] 파라솔 풀세트(스탠드+전용백포함)</span>
+          <span style="display"><em>크기 및 중량:</em> 상세페이지참조</span>
+          <span style="display"><em>색상:</em> 상세페이지참조</span>
+          <span style="display"><em>재질:</em> 상세페이지참조</span><br>
+          <span style="display"><em>제품구성:</em> 파라솔 풀세트(스탠드+전용백포함) [파라솔 파우치에는 천과 기둥만 수납이 가능하며, 스탠드는 별도의 파우치를 제공하지
+            않습니다.]</span><br>
+          <span style="display"><em>동일모델의 출시년월:</em> 상세페이지참조</span>
+          <span style="display"><em>제조자(수입여부):</em> 브루클린웍스</span>
+          <span style="display"><em>제조국:</em> 중국</span>
+          <span style="display"><em>상품별 세부 사양:</em> 상세페이지참조</span>
+          <span style="display"><em>KC인증정보:</em></span><br>
+          <span style="display"><em>품질보증기준:</em> 관련법 및 소비자분쟁해결기준에 따름</span>
+          <span style="display"><em>A/S 책임자/전화번호:</em> 텐바이텐 고객행복센터 1644-6030</span>
+        </div>
+      </div>
+
+      <!-- 테이블 수정작업(리뷰박스) -->
+      <div id="review">
+        <h2><img src="img/logo/icon_pen.jpg"> 상품 후기</h2>
+        <ul>
+          <li><a href="#" target="_self">전체(30)</a></li>
+          <li><a href="#" target="_self">포토</a></li>
+          <li><a href="#" target="_self">매장</a></li>
+          <li>
+            <div class="dropbox">
+              <select>
+                <option>최신후기순</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <a href="#" target="_self"><button>후기 작성하기</button></a>
+            </div>
+          </li>
+        </ul>
+
+        <div id="review_tablebox">
+          <table>
+            <tr>
+              <th>5</th>
+              <td><a href="#" target="_self">고민하다 구매했는데 사길 잘했네요!</a></td>
+              <td>이나경</td>
+              <td>2023.01.25.</td>
+              <td><img src="img/logo/ico_review_star_05.png"></td>
+            </tr>
+
+            <tr>
+              <th>4</th>
+              <td><a href="#" target="_self">품절될까봐 얼른 구매했습니다.</a></td>
+              <td>손석구</td>
+              <td>2020.11.21</td>
+              <td><img src="img/logo/ico_review_star_04.png"></td>
+            </tr>
+
+            <tr>
+              <th>3</th>
+              <td><a href="#" target="_self">알아들었으면 구매해! 얼른!</a></td>
+              <td>박연진</td>
+              <td>2020.09.24</td>
+              <td><img src="img/logo/ico_review_star_04.png"></td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <td><a href="#" target="_self">잘 쓰겠습니다.</a></td>
+              <td>문동은</td>
+              <td>2023.01.03</td>
+              <td><img src="img/logo/ico_review_star_04.png"></td>
+            </tr>
+
+            <tr>
+              <th>1</th>
+              <td><a href="#" target="_self">너무 예뻐요.</a></td>
+              <td>조승우</td>
+              <td>2020.07.15</td>
+              <td><img src="img/logo/ico_review_star_05.png"></td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+
+      <!-- 이름 수정작업(리뷰박스) -->
+      <div id="review2">
+        <ul>
+          <li>Q &#38; A</li>
+          <li>
+            <div class="qna_button">
+              <a href="#" target="_self"><button>문의하기</button></a>
+            </div>
+          </li>
+        </ul>
+
+        <div id="review_tablebox2">
+          <table>
+            <tr>
+              <th>3</th>
+              <td><a href="#" target="_self">알아들었으면 답변해! </a></td>
+              <td>박연진</td>
+              <td>2023.01.24</td>
+              <td>답변완료</td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <td><a href="#" target="_self">수리는 어디에 맡기나요.</a></td>
+              <td>문동은</td>
+              <td>2023.01.03</td>
+              <td>답변완료</td>
+            </tr>
+
+            <tr>
+              <th>1</th>
+              <td><a href="#" target="_self">배송문의합니다.</a></td>
+              <td>조승우</td>
+              <td>2022.07.15</td>
+              <td>답변완료</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div id="as_info">
+        <ul>
+          <li>배송&#47;교환&#47;환불</li>
+          <li><a href="#" target="_self"><button>반품&#47;환불 신청하기</button></a></li>
+        </ul>
+      </div>
+
+      <div id="as_info_table">
+        <table>
+          <tr>
+            <td>
+              <h4>배송정보</h4>
+            </td>
+            <td>
+              <p>배송기간은 주문일(무통장입금은 결제완료일)로부터 1일(24시간) ~5일 정도 걸립니다.</p>
+              <p>단, 지정일 배송이 가능한 플라워 상품이나, 제작기간이 별도로 소요되는 상품의 경우에는 상품설명에 있는 제작기간과 배송시기를 숙지해 주시기 바랍니다.</p>
+              <p>업체조건배송 상품은 해당 브랜드 배송기준으로 배송비가 부여됩니다. 업체착불배송 상품은 해당 브랜드 배송기준 및 배송지에 따라 배송비가 착불로 부과됩니다.</p>
+              <p>가구 및 플라워 등의 상품의 경우에는 지역에 따라 추가 배송비용이 발생할 수 있음을 알려드립니다.</p>
+              <p>해외배송 표시가 되어 있는 상품은 해외 주소로 배송이 가능합니다. (배송방법 : EMS)</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h4>교환&#47;환불&#47;AS안내</h4>
+            </td>
+            <td>
+              <p>교환/반품 신청은 배송완료 후 7일 이내 가능합니다.</p>
+              <p>변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.</p>
+              <p>상품 불량인 경우는 배송비를 포함한 전액이 환불됩니다.</p>
+              <p>출고 이후 환불요청 시 상품 회수 후 처리됩니다.</p>
+              <p>주얼리를 포함한 주문제작 상품/카메라/밀봉포장상품/플라워 등은 변심으로 인한 반품/환불이 불가합니다.</p>
+              <p>완제품으로 수입된 상품의 경우 A/S가 불가합니다.</p>
+              <p>상품페이지에 교환/환불/AS에 대한 브랜드 개별기준이 있는 경우에는 해당 내용이 우선 적용 됩니다.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h4>기타 기준사항</h4>
+            </td>
+            <td>
+              <p>구매자가 미성년자인 경우에는 상품 구입시 법정대리인이 동의하지 아니하면 미성년자 본인 또는 법정대리인이 구매취소 할 수 있습니다.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+
+    <!-- 바텀 투게더 -->
+
+    <div id="bot_together">
+      <h3>TOGETHER <span>카테고리 인기 상품</span></h3>
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_01.jpg" alt="상품사진1">
+          <h4>QUOTT</h4>
+          <p>미니 북 레스트</p>
+          <h5 class="per_10">83,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_02.jpg" alt="상품사진2">
+          <h4>dodot</h4>
+          <p>밀라노 북선반 4color</p>
+          <h5 class="per_30">139,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_04.jpg" alt="상품사진3">
+          <h4>dodot</h4>
+          <p>선인장 북선반</p>
+          <h5 class="per_27">159,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_05.jpg" alt="상품사진4">
+          <h4>S-F</h4>
+          <p>서프쉘프</p>
+          <h5 class="per_10">450,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_06.jpg" alt="상품사진5">
+          <h4>Y cabinet</h4>
+          <p>와이캐비닛 북엔드</p>
+          <h5 class="per_30">17,600원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_07.jpg" alt="상품사진1">
+          <h4>MILLANC</h4>
+          <p>밀랑 에세이 크림버치</p>
+          <h5 class="per_10">119,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_08.jpg" alt="상품사진1">
+          <h4>poladore</h4>
+          <p>다용도 이동식 트롤리 선반</p>
+          <h5 class="per_47">24,900원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_09.jpg" alt="상품사진1">
+          <h4>비알프렌드</h4>
+          <p>아우어 오브제 2/3/4단</p>
+          <h5>28,300원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_01.jpg" alt="상품사진1">
+          <h4>moodns</h4>
+          <p>거실 만화 책장 1600</p>
+          <h5>149,000원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_10.jpg" alt="상품사진1">
+          <h4>209AVENUE</h4>
+          <p>프리미오 1500 북선반 북타워</p>
+          <h5 class="per_32">193,000원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_11.jpg" alt="상품사진1">
+          <h4>dometopia</h4>
+          <p>책상위 책꽂이 선반 2단</p>
+          <h5>70,500원</h5>
+        </a>
+      </div>
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_12.jpg" alt="상품사진1">
+          <h4>S-F</h4>
+          <p>캘리포니아 그라데이션 오브제</p>
+          <h5 class="per_10">450,000원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_13.jpg" alt="상품사진1">
+          <h4>S-F</h4>
+          <p>시드니 그라데이션 오브제</p>
+          <h5 class="per_10">450,000원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_14.jpg" alt="상품사진1">
+          <h4>S-F</h4>
+          <p>프리미엄 네추럴 오브제 서핑보드</p>
+          <h5 class="per_10">450,000원</h5>
+        </a>
+      </div>
+
+
+      <div class="sub_together_box"><a href="#" target="_self"><img src="img/sub/same_categ_15.jpg" alt="상품사진1">
+          <h4>OMS</h4>
+          <p>만화 거실 5단 원목 책장</p>
+          <h5>196,000원</h5>
+        </a>
+      </div>
+
+
+
+
+
+    </div>
+
+
+    </div>
+    <!--전체 감싸는 박스 div -->
+
+
+
+
+    <div id="b_info">
+      <div id="foot_info">
+        <div class="info_top_1">
+          <ul>
+            <li>
+              <h2>공지사항</h2>
+            </li>
+            <li>
+              <p><a href="#" target="_self">영화 &lt;리틀 엘렌: 외계인과 안테나 대소동&gt; 예매권 이벤트</a></p>
+            </li>
+            <li>
+              <p><a href="#" target="_self">&lt;앱전용 응모템 : 케어베어 30cm 인형&gt; 당첨자 발표!</a></p>
+            </li>
+            <li>
+              <p><a href="#" target="_self">&lt;행운의 영수증&gt; 당첨자 발표</a></p>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <h2>매장안내</h2>
+            </li>
+            <li>
+              <table>
+                <tr>
+                  <td width="180px"><a href="#" target="_self">대학로점</a></td>
+                  <td><a href="#" target="_self">텐바이텐 신제주점</a></td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info_top_2">
+          <ul>
+            <li>
+              <h2>서비스</h2>
+            </li>
+            <li><a href="#" target="_self">
+                <p>텐바이텐 기프트카드</p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>텐바이텐 멤버십카드</p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>선물포장 서비스<br><br></p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>고마워 텐바이텐<br><br></p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>기프티콘 상품교환</p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>비회원 메일신청</p>
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="info_top_3">
+          <ul>
+            <li>
+              <h2>회원혜택</h2>
+            </li>
+            <li><a href="#" target="_self">
+                <p>쿠폰북</p>
+              </a></li>
+            <li><a href="#" target="_self">
+                <p>회원등급별 혜택<br><br></p>
+              </a></li>
+          </ul>
+
+          <ul>
+            <li>
+              <h2>JOIN US</h2>
+            </li>
+            <li><a href="#" target="_self">
+                <p>지금 텐바이텐 가입하면</p>
+                <p>무료배송 + 45,000원 쿠폰</p>
+                <p>회원가입 하기</p>
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="info_top_4">
+          <ul>
+            <li>
+              <h2>SNS</h2>
+            </li>
+            <li><a href="#" target="_self"><img src="img/./in_logo.jpg" alt="in_logo.jpg">인스타그램</a></li>
+            <li><a href="#" target="_self"><img src="img/./fb_logo.jpg" alt="fb_logo">페이스북</a></li>
+            <li><a href="#" target="_self"><img src="img/./yt_logo.jpg" alt="yt_logo">유튜브</a></li>
+            <li>
+              <h2>모바일</h2>
+            </li>
+            <li><img src="img/qr_tenbyten.png" alt="qrcode">
+              <img src="img/./mobile_icon.jpg" alt="모바일아이콘">
+            </li>
+            <li>
+              <p><a href="#" target="_self">앱 다운받고 쿠폰 받으세요</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <!--하단-->
+
+  <footer>
+    <div id="foot_bottom1">
+      <div id="foot_infobar">
+        <ul>
+          <li><a href="#" target="_self">회사소개</a></li>
+          <li><a href="#" target="_self">채용정보</a></li>
+          <li><a href="#" target="_self">이용약관</a></li>
+          <li><a href="#" target="_self">개인정보 처리방침</a></li>
+          <li><a href="#" target="_self">청소년 보호정책</a></li>
+          <li><a href="#" target="_self">제휴/광고</a></li>
+          <li><a href="#" target="_self">입점문의</a></li>
+          <li><a href="#" target="_self">매장안내</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="foot_bottom2">
+      <div id="foot_info_end">
+        <div class="foot_info_logo"><img src="img/logo_tenbyten.png"></div>
+        <div class="foot_info_text">
+          <h3>㈜텐바이텐</h3>
+
+          <p>대표이사 : 최은희 / 서울시 종로구 대학로 57 홍익대학교 대학로캠퍼스 교육동 14층
+            사업자등록번호 : 211-87-00620 / 통신판매업 신고 : 제 01-1968호 사업자 정보확인
+            개인정보보호책임자 : 이문재 / 소비자피해보상보험 SGI 서울보증 서비스 가입 사실 확인<br><br>
+
+            호스팅서비스:㈜텐바이텐
+            COPYRIGHT © TENBYTEN ALL RIGHTS RESERVED.</p>
+
+        </div>
+        <div class="foot_info_etc"><img src="img/logo_sns.jpg">
+          <a href="#" target="_self">
+            <div class="etc_box">
+              <h5>고객센터 바로가기</h5>
+              <p>운영시간 오전 10시 ~ 오후 5시 (주말, 공휴일 휴무)</p>
+              <p>점심시간 오후 12시 30분 ~ 오후 1시 30분</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
