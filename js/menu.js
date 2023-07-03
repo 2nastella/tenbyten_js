@@ -8,3 +8,11 @@ $(function () {
       $(".sub").stop().fadeOut("fast");
     });
 });
+
+
+$(function () {
+  $(".top_close_btn").click(function () {
+    $("#headerbar").slideUp();
+    $("#headerbar").stop().hide();
+  });
+});
